@@ -9,13 +9,99 @@
 <h1>Recent Papers</h1>
 
 <div class="publication">
+    <h2><a href="https://ieeexplore.ieee.org/document/10073615" target="_blank">Fast and Inexpensive High-Level Synthesis Design
+        Space Exploration: Machine Learning to the Rescue</a></h2>
+    <p><strong>Venue:</strong> IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</p>
+    <p><strong>Authors:</strong> Md Imtiaz Rashid, and Benjamin Carrion Schafer</p>
+    <p><strong>Year:</strong> 2023</p>
+    <p><strong>Abstract:</strong> High-level synthesis (HLS) has multiple significant
+        advantages over traditional RT-level design flows. One in particular
+        that we address in this work is the ability to generate multiple
+        functional equivalent design variants with unique tradeoffs, such
+        as area, performance, and power from the same behavioral
+        description. This is typically done by setting synthesis options in
+        the form or pragmas (comments) to mainly control how to synthesize
+        arrays (RAM or registers), loops (unroll, partially unroll, no
+        unroll or pipeline), and functions (inline or not). Setting different
+        pragma combinations lead to these different design implementations.
+        Out of all the pragma combinations the designer is typically
+        only interested in those that lead to the Pareto-optimal designs
+        (PODs). Fortunately, this search can be automated, but unfortunately,
+        the search space to find these pragma combinations
+        grows supra-linearly with the number of pragma settings. Thus,
+        fast and efficient heuristics are needed. These heuristics generate
+        a new pragma combination and then evaluate their effect
+        by synthesizing (HLS) it. The most time-consuming part of this
+        process is having to execute a full synthesis (HLS) on the behavioral
+        description for every new pragma combination. One obvious
+        way to accelerate the exploration is to parallelize the exploration
+        process using a multithreaded heuristic. The theoretical speedup
+        should match the number of parallel threads. The main problem
+        with this approach is that every HLS invokation requires to check
+        out an HLS tool license. This license is not released until the
+        synthesis process has finished. This implies that the maximum
+        number of parallel threads is restricted by the number of available
+        licenses, which in the ASIC case are extremely expensive.
+        On the contrary, FPGA vendors make their HLS tools free. Thus,
+        it is tempting to investigate if FPGA HLS tools can be used to
+        find the PODs in the ASIC case. To address this, in this work
+        we present a dedicated multithreaded parallel HLS design space
+        explorer (DSE) based on transfer learning that is able to accelerate
+        HLS DSE for ASICs by targeting first FPGAs and using
+        machine learning to convert the exploration results obtained to
+        find the optimal ASIC equivalent. Experimental results show the
+        effectiveness and robustness of our approach.</p>
+</div>
+
+<div class="publication">
+    <h2><a href="https://ieeexplore.ieee.org/document/10323853" target="_blank">Robust GNN-based Representation Learning for HLS</a></h2>
+    <p><strong>Venue:</strong> IEEE/ACM International Conference on Computer Aided Design (ICCAD)</p>
+    <p><strong>Authors:</strong> Atefeh Sohrabizadeh, Yunsheng Bai, Yizhou Sun, and Jason Cong</p>
+    <p><strong>Year:</strong> 2023</p>
+    <p><strong>Abstract:</strong> The efficient and timely optimization of microarchitecture
+        for a target application is hindered by the long evaluation runtime of
+        a design candidate, creating a serious burden. To tackle this problem,
+        researchers have started using learning algorithms such as graph neural
+        networks (GNNs) to accelerate the process by developing a surrogate of
+        the target tool. However, challenges arise when developing such models
+        for HLS tools due to the program’s long dependency range and deeply
+        coupled input program and transformations (i.e., pragmas). To address
+        them, in this paper, we present HARP (Hierarchical Augmentation
+        for Representation with Pragma optimization) with a novel hierarchical
+        graph representation of the HLS design by introducing auxiliary
+        nodes to include high-level hierarchical information about the design.
+        Additionally, HARP decouples the representation of the program and
+        its transformations and includes a neural pragma transformer (NPT)
+        approach to facilitate a more systematic treatment of this process. Our
+        proposed graph representation and model architecture of HARP not
+        only enhance the performance of the model and design space exploration
+        based on it but also improve the model’s transfer learning capability,
+        enabling easier adaptation to new environments.</p>
+</div>
+
+<!-- <div class="publication">
     <h2><a href="paper_link_1.pdf" target="_blank">Example Publication Title</a></h2>
     <p><strong>Venue:</strong> Conference/Journal Name</p>
     <p><strong>Authors:</strong> Author Three, Author Four</p>
     <p><strong>Year:</strong> 2022</p>
     <p><strong>Abstract:</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
+</div> -->
 
+<!-- <div class="publication">
+    <h2><a href="paper_link_1.pdf" target="_blank">Example Publication Title</a></h2>
+    <p><strong>Venue:</strong> Conference/Journal Name</p>
+    <p><strong>Authors:</strong> Author Three, Author Four</p>
+    <p><strong>Year:</strong> 2022</p>
+    <p><strong>Abstract:</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div> -->
+
+<!-- <div class="publication">
+    <h2><a href="paper_link_1.pdf" target="_blank">Example Publication Title</a></h2>
+    <p><strong>Venue:</strong> Conference/Journal Name</p>
+    <p><strong>Authors:</strong> Author Three, Author Four</p>
+    <p><strong>Year:</strong> 2022</p>
+    <p><strong>Abstract:</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div> -->
 
 </body>
 </html>

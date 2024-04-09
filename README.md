@@ -2,6 +2,10 @@
 -------
 
 
+[Machine Learning for Hardware Security](https://bhabeshmali.github.io/hardsec.html)
+-------
+
+
 [Machine Learning for HLS](https://bhabeshmali.github.io/hls.html)
 -------
 

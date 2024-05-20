@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recent Papers</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+    .publication {
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .publication h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: #333;
+    }
+    .publication p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        color: #666;
+        font-size: 16px;
+    }
+    .publication p strong {
+        font-weight: bold;
+        color: #333;
+        font-size: 18px; /* Adjusted font size for strong elements */
+    }
+    .publication p span {
+        font-size: 18px; /* Adjusted font size for span elements */
+    }
+    .publication .abstract {
+        font-size: 18px; /* Adjusted font size for abstract */
+    }
+    .publication p:last-child {
+        margin-bottom: 0;
+    }
+</style>
+</head>
+<body>
+<h1>Recent Papers</h1>
+<div class="publication">
+    <h2><a href="https://proceedings.mlr.press/v202/lai23c.html" target="_blank">ChiPFormer: Transferable Chip Placement via Offline Decision Transformer</a></h2>
+    <p><strong>Venue:</strong> <span style="font-size: 18px;">ICML (A*)</span></p>
+    <p><strong>Authors:</strong> <span style="font-size: 18px;">Yao Lai, Jinxin Liu, Zhentao Tang, Bin Wang, Jianye Hao, Ping Luo</span></p>
+    <p><strong>Year:</strong> <span style="font-size: 18px;">2023</span></p>
+    <p class="abstract"><strong>Abstract:</strong>Placement is a critical step in modern chip design, aiming to determine the positions of circuit modules on the chip canvas. Recent works have shown that reinforcement learning (RL) can improve human performance in chip placement. However, such an RL-based approach suffers from long training time and low transfer ability in unseen chip circuits. To resolve these challenges, we cast the chip placement as an offline RL formulation and present ChiPFormer that enables learning a transferable placement policy from fixed offline data. ChiPFormer has several advantages that prior arts do not have. First, ChiPFormer can exploit offline placement designs to learn transferable policies more efficiently in a multi-task setting. Second, ChiPFormer can promote effective finetuning for unseen chip circuits, reducing the placement runtime from hours to minutes. Third, extensive experiments on 32 chip circuits demonstrate that ChiPFormer achieves significantly better placement quality while reducing the runtime by 10x compared to recent state-of-the-art approaches in both public benchmarks and realistic industrial tasks. The deliverables are released at https://sites.google.com/view/chipformer/home.</p>
+</div>
+
+<div class="publication">
+    <h2><a href="https://proceedings.neurips.cc/paper/2021/hash/898aef0932f6aaecda27aba8e9903991-Abstract.html" target="_blank">On Joint Learning for Solving Placement and Routing in Chip Design</a></h2>
+    <p><strong>Venue:</strong> <span style="font-size: 18px;">NeurIPS (A*)</span></p>
+    <p><strong>Authors:</strong> <span style="font-size: 18px;">Ruoyu Cheng, Junchi Yan</span></p>
+    <p><strong>Year:</strong> <span style="font-size: 18px;">2021</span></p>
+    <p class="abstract"><strong>Abstract:</strong>For its advantage in GPU acceleration and less dependency on human experts, machine learning has been an emerging tool for solving the placement and routing problems, as two critical steps in modern chip design flow. Being still in its early stage, there are several fundamental issues unresolved: scalability, reward design, and end-to-end learning paradigm etc. To achieve end-to-end placement learning, we first propose a joint learning method for the placement of macros and standard cells, by the integration of reinforcement learning with a gradient based optimization scheme. To further bridge the placement with the subsequent routing task, we also develop a joint learning approach via reinforcement learning. One key design in our (reinforcement) learning paradigm involves a multi-view embedding model to encode both global graph level and local node level information of the input macros. Moreover, the random network distillation is devised to encourage exploration. Experiments on public chip design benchmarks show that our method can effectively learn from experience and also provide high-quality intermediate placement for the post standard cell placement, within few hours for training.</p>
+</div>
+
+<div class="publication">
+    <h2><a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/97c8a8eb0e5231d107d0da51b79e09cb-Abstract-Conference.html" target="_blank">MaskPlace: Fast Chip Placement via Reinforced Visual Representation Learning</a></h2>
+    <p><strong>Venue:</strong> <span style="font-size: 18px;">NeurIPS (A*)</span></p>
+    <p><strong>Authors:</strong> <span style="font-size: 18px;">Yao Lai, Yao Mu, Ping Luo</span></p>
+    <p><strong>Year:</strong> <span style="font-size: 18px;">2022</span></p>
+    <p class="abstract"><strong>Abstract:</strong>Placement is an essential task in modern chip design, aiming at placing millions of circuit modules on a 2D chip canvas. Unlike the human-centric solution, which requires months of intense effort by hardware engineers to produce a layout to minimize delay and energy consumption, deep reinforcement learning has become an emerging autonomous tool. However, the learning-centric method is still in its early stage, impeded by a massive design space of size ten to the order of a few thousand. This work presents MaskPlace to automatically generate a valid chip layout design within a few hours, whose performance can be superior or comparable to recent advanced approaches. It has several appealing benefits that prior arts do not have. Firstly, MaskPlace recasts placement as a problem of learning pixel-level visual representation to comprehensively describe millions of modules on a chip, enabling placement in a high-resolution canvas and a large action space. It outperforms recent methods that represent a chip as a hypergraph. Secondly, it enables training the policy network by an intuitive reward function with dense reward, rather than a complicated reward function with sparse reward from previous methods. Thirdly, extensive experiments on many public benchmarks show that MaskPlace outperforms existing RL approaches in all key performance metrics, including wirelength, congestion, and density. For example, it achieves 60%-90% wirelength reduction and guarantees zero overlaps. We believe MaskPlace can improve AI-assisted chip layout design. The deliverables are released at https://laiyao1.github.io/maskplace.</p>
+</div>
+
+<div class="publication">
+    <h2><a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/97c8a8eb0e5231d107d0da51b79e09cb-Abstract-Conference.html" target="_blank">Macro Placement by Wire-Mask-Guided Black-Box Optimization</a></h2>
+    <p><strong>Venue:</strong> <span style="font-size: 18px;">NeurIPS (A*)</span></p>
+    <p><strong>Authors:</strong> <span style="font-size: 18px;">Yunqi Shi, Ke Xue, Song Lei, Chao Qian</span></p>
+    <p><strong>Year:</strong> <span style="font-size: 18px;">2023</span></p>
+    <p class="abstract"><strong>Abstract:</strong>The development of very large-scale integration (VLSI) technology has posed new challenges for electronic design automation (EDA) techniques in chip floorplanning. During this process, macro placement is an important subproblem, which tries to determine the positions of all macros with the aim of minimizing half-perimeter wirelength (HPWL) and avoiding overlapping. Previous methods include packing-based, analytical and reinforcement learning methods. In this paper, we propose a new black-box optimization (BBO) framework (called WireMask-BBO) for macro placement, by using a wire-mask-guided greedy procedure for objective evaluation. Equipped with different BBO algorithms, WireMask-BBO empirically achieves significant improvements over previous methods, i.e., achieves significantly shorter HPWL by using much less time. Furthermore, it can fine-tune existing placements by treating them as initial solutions, which can bring up to 50% improvement in HPWL. WireMask-BBO has the potential to significantly improve the quality and efficiency of chip floorplanning, which makes it appealing to researchers and practitioners in EDA and will also promote the application of BBO. Our code is available at https://github.com/lamda-bbo/WireMask-BBO.</p>
+</div>
+
+
+
+
+</body>
+</html>

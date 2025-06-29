@@ -1933,3 +1933,15 @@ textarea.form-input::-webkit-resizer { display: none; }
     opacity: 1;
   }
 }
+
+.timeline-text ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.timeline-text li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #ccc;
+}

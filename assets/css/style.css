@@ -1945,3 +1945,15 @@ textarea.form-input::-webkit-resizer { display: none; }
   font-size: 15px;
   color: #ccc;
 }
+
+.project-title {
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.project-category {
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 5px;
+}
